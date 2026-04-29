@@ -34,6 +34,10 @@ app.get("/dashboard", (req, res) => {
 
 
 //* listen
-app.listen(port, () => {
-    console.log(`The application started successfully on port ${port}`);
-});
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`The application started successfully on port ${port}`);
+    });
+}
+
+module.exports = app;
