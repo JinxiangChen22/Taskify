@@ -8,6 +8,7 @@
 <br>
 
 <p align="center">
+<a href="https://codecov.io/gh/JinxiangChen22/Taskify"><img src="https://codecov.io/gh/JinxiangChen22/Taskify/branch/main/graph/badge.svg" alt="codecov"></a>
 <a href="https://github.com/DSCKGEC/Taskify"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github"></a> 
 <a href="https://github.com/DSCKGEC/Taskify"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a> 
 <a href="https://github.com/DSCKGEC/Taskify"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square"></a>
