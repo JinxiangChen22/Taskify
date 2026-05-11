@@ -43,6 +43,10 @@ app.get("/signup", (req, res) => {
     res.status(200).render("signup.ejs");
 });
 
+app.get("/privacy", (req, res) => {
+    res.status(200).render("privacy.ejs");
+});
+
 app.post("/login", (req, res) => {
     const email = (req.body.LoginEmail || "").trim();
     const password = (req.body.LoginPassword || "").trim();

@@ -12,6 +12,17 @@ describe("Page routes", () => {
         expect(res.statusCode).toBe(200);
     });
 
+    test("GET /privacy returns 200", async () => {
+        const res = await request(app).get("/privacy");
+        expect(res.statusCode).toBe(200);
+    });
+
+    test("GET /privacy contains Privacy Policy and essential cookies", async () => {
+        const res = await request(app).get("/privacy");
+        expect(res.text).toContain("Privacy Policy");
+        expect(res.text.toLowerCase()).toContain("essential cookies");
+    });
+
     test("GET /dashboard without session redirects to /signup", async () => {
         const res = await request(app).get("/dashboard");
         expect(res.statusCode).toBe(302);

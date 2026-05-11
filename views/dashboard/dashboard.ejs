@@ -13,11 +13,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="stylesheet" href="../../static/styles/main.css" />
   <link rel="stylesheet" href="../../static/styles/dashboard/dashboard.css">
+  <link rel="stylesheet" href="../../static/styles/cookie-banner.css" />
 
 <body>
   <form action="/logout" method="post" style="margin:8px;">
     <button type="submit">Log out</button>
   </form>
+  <%- include("../partials/cookie-banner.ejs") %>
   <!-- The main dashboard is here  -->
 
   <div class="dashboard-content-container">
@@ -30,6 +32,7 @@
     </div>
   </div>
 
+  <script src="/static/scripts/cookie-banner.js"></script>
 </body>
 
 </html>

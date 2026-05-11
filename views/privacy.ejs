@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/styles/main.css" />
+    <link rel="stylesheet" href="/static/styles/partials/nav.css" />
+    <link rel="stylesheet" href="/static/styles/partials/footer.css" />
+    <link rel="stylesheet" href="/static/styles/cookie-banner.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container navbar-container">
+        <a href="/" class="logo-wrapper">
+          <img src="/static/assets/logo.png" alt="logo" class="logo" />
+          <h1 class="nav-title">Taskify</h1>
+        </a>
+        <div class="nav-buttons">
+          <a href="/signup" class="btn1 nav-btn" aria-label="Sign Up">Sign Up</a>
+          <a href="/dashboard" class="btn2 nav-btn" aria-label="Log In">Log In</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="privacy-main">
+      <div class="container" style="padding-top: 120px; padding-bottom: 120px;">
+        <h1>Privacy Policy</h1>
+
+        <p>
+          Taskify is a coursework demonstration web application. This Privacy Policy explains how
+          Taskify handles cookies and user cookie preferences.
+        </p>
+
+        <h2>Essential cookies for login and session management</h2>
+        <p>
+          We use essential cookies to support login sessions and session management for authenticated
+          access to the dashboard. Without these essential cookies, the login session cannot be
+          maintained.
+        </p>
+
+        <h2>Local cookie preference storage</h2>
+        <p>
+          Your cookie consent choice (accepted or declined) is stored locally in your browser using
+          <code>localStorage</code>. This allows the cookie banner to remember your preference on
+          future visits.
+        </p>
+
+        <h2>No sale of personal data</h2>
+        <p>
+          Taskify does not sell personal data.
+        </p>
+
+        <h2>No advertising or third-party tracking cookies</h2>
+        <p>
+          Taskify does not use advertising cookies or third-party tracking cookies.
+        </p>
+
+        <h2>Manage or clear cookies</h2>
+        <p>
+          You can clear cookies and localStorage through your browser settings at any time.
+        </p>
+
+        <p>
+          <a href="/">Back to homepage</a>
+        </p>
+      </div>
+    </main>
+
+    <%- include("../views/partials/cookie-banner.ejs") %>
+    <script src="/static/scripts/cookie-banner.js"></script>
+  </body>
+</html>
+
