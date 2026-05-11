@@ -34,6 +34,9 @@
           </form>
         </div>
         <div class="login">
+          <% if (typeof loginError !== "undefined" && loginError) { %>
+            <p style="color:#c00;font-size:14px;margin:0 0 8px 0;"><%= loginError %></p>
+          <% } %>
           <form method="post" action="/login">
             <label for="chk" aria-hidden="true">Login</label>
             <div class="signup-email">
